@@ -56,17 +56,13 @@ LeetHint is a Chrome extension that provides intelligent, step-by-step hints for
 3. **Request hints** through the popup interface
 4. **Get AI-powered guidance** tailored to the specific problem
 5. **Learn progressively** with hints that build upon each other
-
+   
 ## Tech Stack
-
-- **Frontend**: React 18, TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Radix UI primitives
-- **Build Tool**: Vite
-- **Extension Framework**: Chrome Extension Manifest V3
-- **AI Integration**: OpenRouter AI SDK
-- **Form Handling**: React Hook Form with Zod validation
-
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS  
+- **UI**: Radix UI primitives
+- **Extension**: Chrome Manifest V3, CRX
+- **AI**: OpenRouter SDK
 
 ### Development Commands
 
