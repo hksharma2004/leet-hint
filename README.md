@@ -14,11 +14,12 @@ LeetHint is a Chrome extension that provides intelligent, step-by-step hints for
 
 ## How it looks
 
-<!-- Add your first screenshot here -->
-*Extension popup interface*
 
-<!-- Add your second screenshot here -->
-*LeetHint in action on a LeetCode problem page*
+![Extension popup interface](public/assets/photo1.png)
+
+
+![LeetHint in action on a LeetCode problem page](public/assets/photo2.png)
+
 
 ## Installation
 
