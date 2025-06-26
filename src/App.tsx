@@ -8,13 +8,17 @@ const Popup: React.FC = () => {
   const [apiKey, setApiKey] = React.useState('');
   const [isLoaded, setIsLoaded] = React.useState(false);
   const [isSaving, setIsSaving] = React.useState(false);
+  const [isKeySaved, setIsKeySaved] = React.useState(false);
   const { toast } = useToast();
 
   React.useEffect(() => {
     (async function loadAPIKey() {
       if (!chrome) return;
       const keyFromStorage = (await chrome.storage.local.get('apiKey')) as { apiKey?: string };
-      if (keyFromStorage.apiKey) setApiKey(keyFromStorage.apiKey);
+      if (keyFromStorage.apiKey) {
+        setApiKey(keyFromStorage.apiKey);
+        setIsKeySaved(true);
+      }
       setIsLoaded(true);
     })();
   }, []);
@@ -51,6 +55,7 @@ const Popup: React.FC = () => {
     try {
       await chrome.storage.local.set({ apiKey });
       console.log('API key saved to storage:', apiKey);
+      setIsKeySaved(true);
       toast({
         title: 'API Key Saved',
         description: 'Your API key has been securely stored',
@@ -82,7 +87,7 @@ const Popup: React.FC = () => {
             LeetHint
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            One hint ahead of the curve
+            One 'hint' ahead of the curve
           </p>
         </div>
 
@@ -120,6 +125,8 @@ const Popup: React.FC = () => {
                 </svg>
                 Saving...
               </span>
+            ) : isKeySaved ? (
+              'API Key Saved'
             ) : (
               'Save Key'
             )}

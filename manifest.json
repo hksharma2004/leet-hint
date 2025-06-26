@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "LeetCode Whisper",
+  "name": "LeetHint",
   "version": "1.0.0",
   "description": "Chrome extension providing AI-driven hints on LeetCode problems. Get step-by-step help to boost problem-solving skills effectively.",
   "permissions": ["storage"],
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": "public/assets/logo.svg"
+  },
+  "icons": {
+    "128": "public/assets/logo.svg"
   },
   "content_scripts": [
     {
