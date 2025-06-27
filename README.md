@@ -2,7 +2,7 @@
 
 **AI-Powered LeetCode Problem Solving Assistant**
 
-LeetHint is a Chrome extension that provides intelligent, step-by-step hints for LeetCode problems using AI. Get personalized guidance to improve your problem-solving skills without spoiling the learning experience.
+LeetHint is a Chrome extension that provides intelligent, step-by-step hints for LeetCode problems using AI. Get personalized guidance to improve your problem-solving skills without spoiling the learning experience. Will look forward to add support for more models on this extension after 'deepseek/deepseek-chat-v3-0324:free'.
 
 ## Features
 
